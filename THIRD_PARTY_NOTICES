@@ -1,0 +1,57 @@
+THIRD_PARTY_NOTICES
+
+Component: A12 Runtime Model Conversion
+Generated: 2026-06-24 for mgm A12 Platform 2026.06
+
+The mgm A12 Platform is developed by mgm technology partners GmbH.
+
+https://www.mgm-tp.com.
+
+This file lists third-party software components included in this
+distribution of the mgm A12 Platform and the licenses that apply
+to them.
+
+Component Overview
+-------------------
+
+The following third-party components are included in this distribution:
+
+
+- com.mgmtp.a12.dataservices.wcf/dataservices-wcf-api 1.1.0, licensed under EUPL v1.2
+	Copyright (C) 2012-2026 mgm technology partners GmbH
+	Source: https://github.com/mgm-tp
+- com.mgmtp.a12.dataservices.wcf/dataservices-wcf-cli 1.1.0, licensed under EUPL v1.2
+	Copyright (C) 2012-2026 mgm technology partners GmbH
+	Source: https://github.com/mgm-tp
+- com.mgmtp.a12.kernel/kernel-md-facade 31.1.0, licensed under EUPL v1.2
+	Copyright (C) 2012-2026 mgm technology partners GmbH
+	Source: https://github.com/mgm-tp
+- com.mgmtp.a12.kernel/kernel-md-workspace-converter 31.1.0, licensed under EUPL v1.2
+	Copyright (C) 2012-2026 mgm technology partners GmbH
+	Source: https://github.com/mgm-tp
+- org.junit.jupiter/junit-jupiter 5.10.2, licensed under EPL-2.0
+	Copyright 2015-2025 the original author or authors
+	Source: https://github.com/junit-team/junit-framework
+- tools.jackson.core/jackson-databind 3.1.2, licensed under Apache-2.0
+	Copyright 2007-, Tatu Saloranta (tatu.saloranta@iki.fi)
+	Source: https://github.com/FasterXML/jackson-databind
+
+
+License Texts
+-------------
+
+Complete license texts for all included third-party components can
+be found in the licenses/ directory, attributions in file NOTICES.
+
+
+General Notice
+--------------
+
+The mgm A12 Platform is dual-licensed under the EUPL-1.2 or a
+commercial license. Third-party components remain under their
+respective licenses. For details, see the file LICENSE.
+"mgm A12" is a registered trademark of mgm technology partners GmbH
+(EU/DE). All other trademarks are the property of their respective
+owners.
+
+End of THIRD_PARTY_NOTICES

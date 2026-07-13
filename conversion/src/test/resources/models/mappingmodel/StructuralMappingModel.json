@@ -1,0 +1,21 @@
+{
+  "header": {
+    "id": "StructuralMappingModel",
+    "modelType": "structuralmapping",
+    "modelVersion": "1.0.0"
+  },
+  "content": {
+    "GroupsToClearOnFirstFill": [],
+    "MappingBlocks": [
+      {
+        "ResolutionStrategies": [],
+        "FieldMappings": [
+          {
+            "sourceFieldFullName": "/Source/SourceRoot/SourceField",
+            "targetFieldFullName": "/TargetRoot/TargetField"
+          }
+        ]
+      }
+    ]
+  }
+}

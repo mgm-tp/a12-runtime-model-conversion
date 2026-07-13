@@ -1,0 +1,102 @@
+{
+  "header": {
+    "id": "Employee_DM",
+    "modelType": "document",
+    "modelVersion": "29.4.0",
+    "locales": [
+      {
+        "code": "en"
+      },
+      {
+        "code": "de"
+      }
+    ],
+    "labels": [
+      {
+        "locale": "en",
+        "text": "Employee"
+      },
+      {
+        "locale": "de",
+        "text": "Mitarbeiter"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "superTypes",
+        "value": "Person_DM"
+      },
+      {
+        "name": "roles",
+        "value": "admin"
+      }
+    ],
+    "modelReferences": [
+      {
+        "alias": "Person_DM",
+        "modelType": "document",
+        "purpose": "include",
+        "reference": "Person_DM"
+      }
+    ]
+  },
+  "content": {
+    "modelInfo": {
+      "name": "Employee_DM",
+      "immutable": false
+    },
+    "modelConfig": {
+      "decimalSeparator": ".",
+      "timeZone": "UTC",
+      "conditionLanguage": {
+        "code": "en_US"
+      }
+    },
+    "modelRoot": {
+      "rootGroups": [
+        {
+          "type": "Group",
+          "id": "include_7ed7f",
+          "name": "Person",
+          "Group": {
+            "repeatability": 1,
+            "modelAlias": "Person_DM"
+          }
+        },
+        {
+          "type": "Group",
+          "id": "group_00fed",
+          "name": "EmployeeData",
+          "Group": {
+            "repeatability": 1,
+            "elements": [
+              {
+                "type": "Field",
+                "id": "field_974fa",
+                "name": "HireDate",
+                "Field": {
+                  "fieldType": {
+                    "type": "DateType",
+                    "DateType": {
+                      "format": "yyyy-MM-dd"
+                    }
+                  },
+                  "label": [
+                    {
+                      "locale": "en",
+                      "text": "Hire Date"
+                    },
+                    {
+                      "locale": "de",
+                      "text": "Einstellungsdatum"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

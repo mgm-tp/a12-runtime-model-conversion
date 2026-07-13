@@ -1,0 +1,50 @@
+{
+  "header": {
+    "id": "CombinationModel",
+    "modelType": "combination",
+    "modelVersion": "1.0.0",
+    "locales": [
+      {
+        "code": "en"
+      }
+    ],
+    "labels": [],
+    "annotations": [],
+    "modelReferences": [
+      {
+        "reference": "BaseDocumentModel",
+        "modelType": "document",
+        "purpose": "combination-base"
+      },
+      {
+        "reference": "Adm_CombinationModel",
+        "modelType": "document",
+        "purpose": "combination-addition"
+      },
+      {
+        "reference": "SelectionModel",
+        "modelType": "selection",
+        "purpose": "combination-selection"
+      }
+    ]
+  },
+  "content": {
+    "baseModelId": "BaseDocumentModel",
+    "CombinationSteps": [
+      {
+        "type": "Addition",
+        "AdditiveModel": {
+          "dmId": "Adm_CombinationModel"
+        },
+        "DecorationModel": {},
+        "SelectionModel": {}
+      },
+      {
+        "type": "Selection",
+        "SelectionModel": {
+          "smId": "SelectionModel"
+        }
+      }
+    ]
+  }
+}

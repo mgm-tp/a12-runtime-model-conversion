@@ -1,0 +1,25 @@
+.idea
+.gradle
+.kotlin
+.npm
+build
+lib
+node_modules
+.project
+.settings
+*.iml
+gradle-wrapper.*
+gradlew*
+.DS_Store
+.metadata
+
+# prevents checking in temporary local npm packages created with npm pack
+*.tgz
+
+# files created by windows when working with WSL
+*Zone.Identifier
+
+# sbom files
+cyclonedx.json
+
+/**/pnpm-lock.yaml

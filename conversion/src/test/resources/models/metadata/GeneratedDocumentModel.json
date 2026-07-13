@@ -1,0 +1,71 @@
+{
+  "header": {
+    "id": "MyModel__generated",
+    "modelType": "document",
+    "modelVersion": "29.4.0",
+    "locales": [
+      {
+        "code": "en"
+      }
+    ],
+    "labels": [],
+    "annotations": [],
+    "modelReferences": []
+  },
+  "content": {
+    "modelInfo": {
+      "name": "MyModel__generated"
+    },
+    "modelConfig": {
+      "timeZone": "UTC",
+      "decimalSeparator": ".",
+      "conditionLanguage": {
+        "code": "en_US"
+      }
+    },
+    "modelRoot": {
+      "rootGroups": [
+        {
+          "type": "Group",
+          "id": "group_gen_root1",
+          "name": "FirstRootGroup",
+          "Group": {
+            "repeatability": 1,
+            "elements": [
+              {
+                "type": "Field",
+                "id": "field_gen_a",
+                "name": "fieldA",
+                "Field": {
+                  "fieldType": {
+                    "type": "StringType"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "Group",
+          "id": "group_gen_root2",
+          "name": "SecondRootGroup",
+          "Group": {
+            "repeatability": 1,
+            "elements": [
+              {
+                "type": "Field",
+                "id": "field_gen_b",
+                "name": "fieldB",
+                "Field": {
+                  "fieldType": {
+                    "type": "NumberType"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

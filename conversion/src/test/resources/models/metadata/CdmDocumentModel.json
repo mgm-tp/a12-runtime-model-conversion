@@ -1,0 +1,102 @@
+{
+  "header": {
+    "id": "CdmDocumentModel",
+    "modelType": "document",
+    "modelVersion": "29.4.0",
+    "locales": [
+      {
+        "code": "en"
+      }
+    ],
+    "labels": [],
+    "annotations": [
+      {
+        "name": "cdm.queryRoot",
+        "value": "true"
+      }
+    ],
+    "modelReferences": []
+  },
+  "content": {
+    "modelInfo": {
+      "name": "CdmDocumentModel"
+    },
+    "modelConfig": {
+      "timeZone": "UTC",
+      "decimalSeparator": ".",
+      "conditionLanguage": {
+        "code": "en_US"
+      }
+    },
+    "modelRoot": {
+      "rootGroups": [
+        {
+          "type": "Group",
+          "id": "group_cdm_root",
+          "name": "CdmRoot",
+          "Group": {
+            "repeatability": 1,
+            "elements": [
+              {
+                "type": "Field",
+                "id": "field_cdm_title",
+                "name": "title",
+                "Field": {
+                  "fieldType": {
+                    "type": "StringType"
+                  }
+                }
+              },
+              {
+                "type": "Group",
+                "id": "group_rel1",
+                "name": "Orders",
+                "annotations": [
+                  {
+                    "name": "cdm.relationship",
+                    "value": "true"
+                  }
+                ],
+                "Group": {
+                  "repeatability": 100,
+                  "elements": [
+                    {
+                      "type": "Field",
+                      "id": "field_order_id",
+                      "name": "orderId",
+                      "Field": {
+                        "fieldType": {
+                          "type": "StringType"
+                        }
+                      }
+                    },
+                    {
+                      "type": "Group",
+                      "id": "group_rel_child",
+                      "name": "relationship",
+                      "Group": {
+                        "repeatability": 1,
+                        "elements": [
+                          {
+                            "type": "Field",
+                            "id": "field_rel_ref",
+                            "name": "targetRef",
+                            "Field": {
+                              "fieldType": {
+                                "type": "StringType"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

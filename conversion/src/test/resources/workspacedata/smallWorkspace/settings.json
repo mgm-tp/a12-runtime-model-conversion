@@ -1,0 +1,8 @@
+{
+  "general": {
+    "exclusions": [
+      { "excluded": "smallWorkspace/models/company/Company_DM" },
+      { "excluded": "smallWorkspace/data/links/Moore_LLC_Skiles" }
+    ]
+  }
+}

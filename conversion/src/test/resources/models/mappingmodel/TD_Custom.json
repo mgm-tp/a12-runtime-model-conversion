@@ -1,0 +1,43 @@
+{
+  "header": {
+    "id": "TD_Custom",
+    "modelType": "document",
+    "modelVersion": "29.4.0",
+    "locales": [
+      {
+        "code": "en_US"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "tdonly",
+        "value": "true"
+      }
+    ],
+    "modelReferences": []
+  },
+  "content": {
+    "modelInfo": {
+      "name": "TD_Custom"
+    },
+    "modelConfig": {
+      "timeZone": "UTC",
+      "decimalSeparator": ".",
+      "conditionLanguage": {
+        "code": "en_US"
+      }
+    },
+    "typeDefinitions": [
+      {
+        "id": "typedef_112eb481-ab9f-4c84-86b3-7545c25156a2",
+        "name": "CustomTD",
+        "fieldType": {
+          "type": "StringType"
+        }
+      }
+    ],
+    "modelRoot": {
+      "rootGroups": []
+    }
+  }
+}

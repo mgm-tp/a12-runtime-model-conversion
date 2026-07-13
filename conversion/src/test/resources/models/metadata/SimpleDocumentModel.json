@@ -1,0 +1,61 @@
+{
+  "header": {
+    "id": "SimpleDocumentModel",
+    "modelType": "document",
+    "modelVersion": "29.4.0",
+    "locales": [
+      {
+        "code": "en"
+      }
+    ],
+    "labels": [],
+    "annotations": [],
+    "modelReferences": []
+  },
+  "content": {
+    "modelInfo": {
+      "name": "SimpleDocumentModel"
+    },
+    "modelConfig": {
+      "timeZone": "UTC",
+      "decimalSeparator": ".",
+      "conditionLanguage": {
+        "code": "en_US"
+      }
+    },
+    "modelRoot": {
+      "rootGroups": [
+        {
+          "type": "Group",
+          "id": "group_root1",
+          "name": "PersonData",
+          "Group": {
+            "repeatability": 1,
+            "elements": [
+              {
+                "type": "Field",
+                "id": "field_name",
+                "name": "name",
+                "Field": {
+                  "fieldType": {
+                    "type": "StringType"
+                  }
+                }
+              },
+              {
+                "type": "Field",
+                "id": "field_age",
+                "name": "age",
+                "Field": {
+                  "fieldType": {
+                    "type": "NumberType"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "header": {
+    "id": "Adm_CombinationModel",
+    "modelType": "document",
+    "modelVersion": "29.4.0",
+    "locales": [
+      {
+        "code": "en"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "additive-document",
+        "value": "true"
+      }
+    ],
+    "modelReferences": []
+  },
+  "content": {
+    "modelInfo": {
+      "name": "Adm_CombinationModel"
+    },
+    "modelConfig": {
+      "timeZone": "UTC",
+      "decimalSeparator": ".",
+      "conditionLanguage": {
+        "code": "en_US"
+      }
+    },
+    "modelRoot": {
+      "rootGroups": [
+        {
+          "type": "Group",
+          "id": "group_19193",
+          "name": "AddedGroup",
+          "Group": {
+            "repeatability": 1,
+            "elements": [
+              {
+                "type": "Field",
+                "id": "field_cfe6c",
+                "name": "AddedField",
+                "Field": {
+                  "fieldType": {
+                    "type": "StringType"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

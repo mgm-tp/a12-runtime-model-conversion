@@ -1,0 +1,39 @@
+{
+  "header": {
+    "id": "ToBeIncluded",
+    "modelType": "document",
+    "modelVersion": "29.4.0",
+    "locales": [
+      {
+        "code": "en"
+      }
+    ],
+    "annotations": [],
+    "modelReferences": []
+  },
+  "content": {
+    "modelInfo": {
+      "name": "ToBeIncluded"
+    },
+    "modelConfig": {
+      "timeZone": "UTC",
+      "decimalSeparator": ".",
+      "conditionLanguage": {
+        "code": "en"
+      }
+    },
+    "modelRoot": {
+      "rootGroups": [
+        {
+          "type": "Group",
+          "id": "group_5933b",
+          "name": "BaseDocumentModelRoot",
+          "Group": {
+            "repeatability": 1,
+            "elements": []
+          }
+        }
+      ]
+    }
+  }
+}

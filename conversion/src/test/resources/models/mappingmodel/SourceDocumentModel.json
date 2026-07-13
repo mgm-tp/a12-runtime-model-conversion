@@ -1,0 +1,56 @@
+{
+  "header": {
+    "id": "SourceDocumentModel",
+    "modelType": "document",
+    "modelVersion": "29.4.0",
+    "locales": [
+      {
+        "code": "en"
+      }
+    ],
+    "annotations": [],
+    "modelReferences": [
+      {
+        "modelType": "document",
+        "purpose": "typeDefinitions",
+        "reference": "TD_Custom"
+      }
+    ]
+  },
+  "content": {
+    "modelInfo": {
+      "name": "SourceDocumentModel"
+    },
+    "modelConfig": {
+      "timeZone": "UTC",
+      "decimalSeparator": ".",
+      "conditionLanguage": {
+        "code": "en_US"
+      }
+    },
+    "modelRoot": {
+      "rootGroups": [
+        {
+          "type": "Group",
+          "id": "group_f5acd",
+          "name": "SourceRoot",
+          "Group": {
+            "repeatability": 1,
+            "elements": [
+              {
+                "type": "Field",
+                "id": "field_ce316",
+                "name": "SourceField",
+                "Field": {
+                  "fieldType": {
+                    "type": "StringType"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

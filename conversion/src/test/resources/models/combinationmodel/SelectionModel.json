@@ -1,0 +1,29 @@
+{
+  "header": {
+    "modelType": "selection",
+    "modelVersion": "1.0.0",
+    "id": "SelectionModel",
+    "annotations": []
+  },
+  "content": {
+    "Data": {
+      "Default": "Selected",
+      "Selected": [],
+      "Unselected": [
+        {
+          "path": "/BaseDocumentModelRoot/SubGroup/SubGroupField"
+        }
+      ]
+    },
+    "Computation": {
+      "Default": "Selected",
+      "Selected": [],
+      "Unselected": []
+    },
+    "Validation": {
+      "Default": "Selected",
+      "Selected": [],
+      "Unselected": []
+    }
+  }
+}

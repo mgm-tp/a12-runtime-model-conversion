@@ -1,0 +1,25 @@
+{
+  "header": {
+    "modelType": "selection",
+    "modelVersion": "1.0.0",
+    "id": "SelectionModel_NotReferenced",
+    "annotations": []
+  },
+  "content": {
+    "Data": {
+      "Default": "Selected",
+      "Selected": [],
+      "Unselected": []
+    },
+    "Computation": {
+      "Default": "Selected",
+      "Selected": [],
+      "Unselected": []
+    },
+    "Validation": {
+      "Default": "Selected",
+      "Selected": [],
+      "Unselected": []
+    }
+  }
+}

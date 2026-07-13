@@ -1,0 +1,58 @@
+{
+  "header": {
+    "id": "MappingModel",
+    "modelType": "mapping",
+    "modelVersion": "1.0.0",
+    "locales": [
+      {
+        "code": "en"
+      }
+    ],
+    "labels": [
+      {
+        "locale": "en",
+        "text": "mm"
+      }
+    ],
+    "annotations": [],
+    "modelReferences": [
+      {
+        "modelType": "document",
+        "reference": "SourceDocumentModel"
+      },
+      {
+        "modelType": "document",
+        "reference": "TargetDocumentModel"
+      },
+      {
+        "modelType": "additive-document",
+        "reference": "Adm_MappingModel"
+      },
+      {
+        "modelType": "structuralmapping",
+        "reference": "StructuralMappingModel"
+      }
+    ]
+  },
+  "content": {
+    "Target": {
+      "dmId": "TargetDocumentModel",
+      "ui_name": "TargetDocumentModel"
+    },
+    "Source": [
+      {
+        "maxRepeat": 1,
+        "includeLevel": "MODEL_ROOT",
+        "SortInfo": {},
+        "dmId": "SourceDocumentModel",
+        "name": "Source"
+      }
+    ],
+    "StructuralMappingModel": {
+      "id": "StructuralMappingModel"
+    },
+    "PreComputationFragment": {
+      "dmId": "Adm_MappingModel"
+    }
+  }
+}

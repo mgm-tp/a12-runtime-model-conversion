@@ -1,0 +1,39 @@
+{
+  "document": {
+    "Person": {
+      "FirstName": "Craig",
+      "LastName": "Skiles",
+      "ExperienceInYears": 1,
+      "PersonalData": {
+        "Gender": "MALE",
+        "DateOfBirth": "1980-01-01"
+      },
+      "Addresses": [
+        {
+          "AddressType": "Postal",
+          "Street": "8333 Leffler Flats",
+          "City": "Lake Raymond",
+          "Country": "Bulgaria"
+        },
+        {
+          "AddressType": "RegAddress",
+          "Street": "31511 Kathrin Track",
+          "City": "North Weldonmouth",
+          "Country": "Netherlands",
+          "Postcode": "06001"
+        },
+        {
+          "Street": "191 Jon Viaduct",
+          "City": "Halle (Saale)",
+          "Country": "Montenegro",
+          "Postcode": "19322"
+        }
+      ]
+    },
+    "EmployeeData": {
+      "HireDate": "2023-02-01"
+    }
+  },
+  "documentModelName": "Employee_DM",
+  "locale": "de"
+}

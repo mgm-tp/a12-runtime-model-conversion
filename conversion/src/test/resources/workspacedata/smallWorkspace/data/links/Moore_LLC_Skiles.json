@@ -1,0 +1,18 @@
+{
+  "entities": [
+    {
+      "modelName": "Employee_DM",
+      "docRef": "Employee_DM/e1875ebd-e2e9-4e0e-9b4b-cd2589553a57",
+      "role": "Person",
+      "roleOrder": ""
+    },
+    {
+      "modelName": "Company_DM",
+      "docRef": "Company_DM/a27dcc68-2553-4cd9-b2bb-58761a03a9f9",
+      "role": "Company",
+      "roleOrder": ""
+    }
+  ],
+  "relationshipModel": "PersonCompany",
+  "linkDocumentDocRef": "PersonCompany_LinkFields_DM/3ffeb8c4-0e07-4322-9097-6b69f087fcd1"
+}

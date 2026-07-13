@@ -1,0 +1,41 @@
+{
+  "document": {
+    "Company": {
+      "CompanyDetails": {
+        "CompanyName": "MooreLLC",
+        "CompanyID": "65249-4874",
+        "VATID": "YAXTMWLBPIKRQHSOGUD",
+        "CompanyLogo": {
+          "attachment_id": "d1e4ac70-648d-43f6-b2e6-cbfabd7aae2e",
+          "original_filename": "17.gif",
+          "internal_filename": "17.gif",
+          "mime_type": "image/gif"
+        }
+      },
+      "Addresses": [
+        {
+          "AddressType": "RegAddress",
+          "Street": "64792 Garfield Cove",
+          "City": "North Ali",
+          "Postcode": "66401"
+        },
+        {
+          "AddressType": "Site",
+          "Street": "85992 Berenice Keys",
+          "City": "Schwerin",
+          "Country": "Cyprus",
+          "Postcode": "19002"
+        },
+        {
+          "AddressType": "Billing",
+          "Street": "457 Schamberger Shoals",
+          "City": "Homburg",
+          "Country": "Philippines",
+          "Postcode": "99438"
+        }
+      ]
+    }
+  },
+  "documentModelName": "Company_DM",
+  "locale": "en"
+}

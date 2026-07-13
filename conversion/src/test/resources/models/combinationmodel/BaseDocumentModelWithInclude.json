@@ -1,0 +1,99 @@
+{
+  "header": {
+    "id": "BaseDocumentModelWithInclude",
+    "modelType": "document",
+    "modelVersion": "29.4.0",
+    "locales": [
+      {
+        "code": "en"
+      }
+    ],
+    "labels": [],
+    "annotations": [],
+    "modelReferences": [
+      {
+        "modelType": "document",
+        "purpose": "typeDefinitions",
+        "reference": "TD_Address"
+      },
+      {
+        "modelType": "document",
+        "purpose": "include",
+        "reference": "ToBeIncluded"
+      }
+    ]
+  },
+  "content": {
+    "modelInfo": {
+      "name": "BaseDocumentModelWithInclude"
+    },
+    "modelConfig": {
+      "timeZone": "UTC",
+      "decimalSeparator": ".",
+      "conditionLanguage": {
+        "code": "en_US"
+      }
+    },
+    "modelRoot": {
+      "rootGroups": [
+        {
+          "type": "Group",
+          "id": "group_5933b",
+          "name": "BaseDocumentModelRoot",
+          "Group": {
+            "repeatability": 1,
+            "elements": [
+              {
+                "type": "Field",
+                "id": "field_504fc",
+                "name": "BaseDocumentModelField",
+                "Field": {
+                  "fieldType": {
+                    "type": "TypeDefType",
+                    "TypeDefType": {
+                      "typeDefinitionId": "typedef_112eb481-db9f-4c84-86b3-7545c25156a2"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "Group",
+                "id": "group_c72bd",
+                "name": "SubGroup",
+                "Group": {
+                  "repeatability": 1,
+                  "elements": [
+                    {
+                      "type": "Field",
+                      "id": "field_09655",
+                      "name": "SubGroupField",
+                      "Field": {
+                        "fieldType": {
+                          "type": "StringType"
+                        },
+                        "requirednessConfig": {
+                          "mode": "absoluteOrRelativeToNextRepAncestor"
+                        }
+                      }
+                    },
+                    {
+                      "type": "Group",
+                      "id": "I8",
+                      "name": "A",
+                      "Group": {
+                        "repeatability": 1,
+                        "includeConfig": {
+                          "reference": "ToBeIncluded"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

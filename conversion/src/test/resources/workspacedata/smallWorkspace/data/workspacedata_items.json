@@ -1,0 +1,23 @@
+{
+  "documents": {
+    "Company_DM/a27dcc68-2553-4cd9-b2bb-58761a03a9f9": {
+      "fileName": "smallWorkspace/data/documents/Company_DM/Company_DM_Moore_LLC.json"
+    },
+    "PersonCompany_LinkFields_DM/3ffeb8c4-0e07-4322-9097-6b69f087fcd1": {
+      "fileName": "smallWorkspace/data/documents/Moore_LLC_Skiles_LinkData.json"
+    }
+  },
+  "links": {
+    "6e28492e-d060-4730-9ea3-e2e7ddc7eafe": {
+      "fileName": "smallWorkspace/data/links/Moore_LLC_Skiles.json"
+    }
+  },
+  "attachments": {
+    "d1e4ac70-648d-43f6-b2e6-cbfabd7aae2e": {
+      "fileName": "smallWorkspace/data/attachments/17.gif",
+      "annotations": [
+        { "name": "category", "value": "logo" }
+      ]
+    }
+  }
+}

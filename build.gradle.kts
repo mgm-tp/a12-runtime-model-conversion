@@ -1,14 +1,19 @@
 plugins {
-    alias(gradlePluginLibs.plugins.palantir.git)
-    alias(gradlePluginLibs.plugins.sonarqube)
-    alias(gradlePluginLibs.plugins.owasp.dependencyCheck)
-    alias(gradlePluginLibs.plugins.buildTimeTracker)
-    id("com.diffplug.spotless") version "8.3.0"
+
+    alias(thirdParty.plugins.palantir.git)
+    alias(thirdParty.plugins.sonarqube)
+    alias(thirdParty.plugins.owasp.dependencyCheck)
+    alias(thirdParty.plugins.buildTimeTracker)
+    alias(thirdParty.plugins.spotless)
+    alias(a12.plugins.integration)
+    alias(a12.plugins.third.party.notices)
 }
+
+val a12ReleaseLine: String by project
 
 spotless {
     java {
-        licenseHeaderFile("licenses/license-header.txt")
+        licenseHeaderFile("copyright/license-header.txt")
         googleJavaFormat()
         target("conversion/src/**/*.java", "integration-test/src/**/*.java")
     }
@@ -23,12 +28,21 @@ val isReleaseBuild = System.getenv("TAG_NAME") != null
 val isMasterBuild = System.getenv("BRANCH_NAME") == "master"
 val isSupportBuild = System.getenv("BRANCH_NAME")?.startsWith("support/") ?: false
 val gitVersion: groovy.lang.Closure<String> by extra
+val versionDetails: groovy.lang.Closure<com.palantir.gradle.gitversion.VersionDetails> by extra
 val buildNr: String? = System.getenv("BUILD_NUMBER")
+// The BD integration build invokes one of these tasks, so their presence on the command line marks an integration run
+val integrationTaskNames = listOf("prepareForIntegration", "buildAndTestForIntegration", "publishForIntegration")
+val isIntegrationBuild =
+    gradle.startParameter.taskNames.any { requested ->
+        requested.substringAfterLast(':') in integrationTaskNames
+    }
 
 allprojects {
     version =
         if (isReleaseBuild) {
             gitVersion()
+        } else if (isIntegrationBuild) {
+            calculateIntegrationVersion()
         } else {
             calculateNightlyVersion()
         }
@@ -36,6 +50,12 @@ allprojects {
     tasks.withType<JavaCompile> {
         options.release.set(21)
     }
+}
+
+fun calculateIntegrationVersion(): String {
+    // Integration builds are versioned "<version>-build.<buildNumber>.integration"
+    val buildNumber = buildNr ?: "0"
+    return "${nextMinorVersion()}.0-build.$buildNumber.integration"
 }
 
 fun calculateNightlyVersion(): String {
@@ -65,6 +85,60 @@ fun nextMinorVersion(): String {
     val major = versionParts[0].toInt()
     val minor = versionParts[1].toInt()
     return "$major.${minor + 1}"
+}
+
+integration {
+    libsVersionsFile = layout.projectDirectory.file("gradle/a12.versions.toml")
+    buildTasks =
+        listOf(
+            "spotlessCheck",
+            "assemble",
+            ":conversion:check",
+            ":integration-test:check"
+        )
+    additionalComponents =
+        mapOf(
+            "kernel" to
+                mapOf(
+                    "npm" to
+                        listOf<String>(),
+                    "toml" to listOf("kernel")
+                ),
+            "wcf" to
+                mapOf(
+                    "npm" to
+                        listOf<String>(),
+                    "toml" to listOf("wcf")
+                )
+        )
+    publishTasks = listOf(":conversion:publish")
+}
+
+thirdPartyNotices {
+    releaseLine.set(a12ReleaseLine)
+
+    notices {
+        register("main") {
+            componentName.set("Runtime Model Conversion (RMC)")
+
+            // Aggregates the direct dependencies of every subproject; mirrors the hand-written root THIRD_PARTY_NOTICES.
+            projectPaths.set(rootProject.subprojects.map { it.path })
+            failOnMissingConfiguration.set(false)
+
+            failOnMissingMetadata.set(true)
+        }
+
+        register("conversionFatJar") {
+            componentName.set("Runtime Model Conversion (RMC) Fat JAR")
+            outputFile.set(rootProject.file("conversion/THIRD_PARTY_NOTICES"))
+            projectPaths.set(listOf(":conversion"))
+
+            failOnMissingMetadata.set(true)
+
+            // fat JAR bundles its whole dependency tree
+            includeTransitiveDependencies.set(true)
+        }
+    }
 }
 
 dependencyCheck {

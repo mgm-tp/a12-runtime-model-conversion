@@ -13,12 +13,10 @@ val wcfCli: Configuration by configurations.creating {
 dependencies {
     // FAT JAR from conversion module as dependency
     conversionFatJar(project(path = ":conversion", configuration = "shadow"))
-
     wcfCli(variantOf(a12.wcf.cli) { classifier("fatjar") })
-
-    testImplementation(libs.junit.jupiter)
-    testImplementation(libs.jackson.databind)
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+    testImplementation(thirdParty.junit.jupiter)
+    testImplementation(thirdParty.jackson.databind)
 }
 
 tasks {

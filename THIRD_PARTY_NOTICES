@@ -1,7 +1,7 @@
 THIRD_PARTY_NOTICES
 
-Component: A12 Runtime Model Conversion
-Generated: 2026-06-24 for mgm A12 Platform 2026.06
+Component: A12 Runtime Model Conversion (RMC)
+Generated: 2026-08-17 for mgm A12 Platform 2026.06
 
 The mgm A12 Platform is developed by mgm technology partners GmbH.
 
@@ -16,23 +16,16 @@ Component Overview
 
 The following third-party components are included in this distribution:
 
-
-- com.mgmtp.a12.dataservices.wcf/dataservices-wcf-api 1.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.dataservices.wcf/dataservices-wcf-api 1.1.3, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.dataservices.wcf/dataservices-wcf-cli 1.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-md-facade 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-md-facade 31.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-md-workspace-converter 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-md-workspace-converter 31.1.0, licensed under EUPL v1.2
-	Copyright (C) 2012-2026 mgm technology partners GmbH
-	Source: https://github.com/mgm-tp
-- org.junit.jupiter/junit-jupiter 5.10.2, licensed under EPL-2.0
-	Copyright 2015-2025 the original author or authors
-	Source: https://github.com/junit-team/junit-framework
-- tools.jackson.core/jackson-databind 3.1.2, licensed under Apache-2.0
+- tools.jackson.core/jackson-databind 3.2.1, licensed under Apache-2.0
 	Copyright 2007-, Tatu Saloranta (tatu.saloranta@iki.fi)
 	Source: https://github.com/FasterXML/jackson-databind
 
@@ -55,3 +48,4 @@ respective licenses. For details, see the file LICENSE.
 owners.
 
 End of THIRD_PARTY_NOTICES
+

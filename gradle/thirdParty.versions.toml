@@ -1,0 +1,23 @@
+[versions]
+buildTimeTracker = "4.3.0"
+git-version = "3.1.0"
+cyclonedx = "3.1.0"
+jackson = "3.2.1"
+junit = "5.10.2"
+owasp = "12.2.2"
+shadow = "9.6.1"
+sonarqube = "7.2.2.6593"
+spotless = "8.3.0"
+
+[libraries]
+jackson-databind = { group = "tools.jackson.core", name = "jackson-databind", version.ref = "jackson" }
+junit-jupiter = { group = "org.junit.jupiter", name = "junit-jupiter", version.ref = "junit" }
+
+[plugins]
+buildTimeTracker = { id = "com.asarkar.gradle.build-time-tracker", version.ref = "buildTimeTracker" }
+owasp-dependencyCheck = { id = "org.owasp.dependencycheck", version.ref = "owasp" }
+palantir-git = { id = "com.palantir.git-version", version.ref = "git-version" }
+shadow = { id = "com.gradleup.shadow", version.ref = "shadow" }
+sonarqube = { id = "org.sonarqube", version.ref = "sonarqube" }
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
+"cyclonedx" = { id = "org.cyclonedx.bom", version.ref = "cyclonedx" }

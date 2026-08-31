@@ -1,7 +1,7 @@
 THIRD_PARTY_NOTICES
 
-Component: A12 Runtime Model Conversion fatjar
-Generated: 2026-06-24 for mgm A12 Platform 2026.06
+Component: A12 Runtime Model Conversion (RMC) Fat JAR
+Generated: 2026-08-17 for mgm A12 Platform 2026.06
 
 The mgm A12 Platform is developed by mgm technology partners GmbH.
 
@@ -16,122 +16,118 @@ Component Overview
 
 The following third-party components are included in this distribution:
 
-
-- com.fasterxml.jackson.core/jackson-annotations 2.21, licensed under Apache-2.0
+- com.fasterxml.jackson.core/jackson-annotations 2.22, licensed under Apache-2.0
 	Copyright 2007-, Tatu Saloranta (tatu.saloranta@iki.fi)
 	Source: https://github.com/FasterXML/jackson-annotations
-- com.mgmtp.a12.base/base-model-api 30.0.1, licensed under EUPL v1.2
+- com.mgmtp.a12.base/base-model-api 30.0.2, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.base/base-model-consistency 30.0.0, licensed under EUPL v1.2
+- com.mgmtp.a12.base/base-model-consistency 30.0.2, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.dataservices.wcf/dataservices-wcf-api 1.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.dataservices.wcf/dataservices-wcf-api 1.1.3, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-conversion-java 31.1.0, licensed under EUPL v1.2
-	Copyright (C) 2012-2026 mgm technology partners GmbH
-	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-core-customfieldtype-api 28.2.0, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-conversion-java 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
 - com.mgmtp.a12.kernel/kernel-core-customfieldtype-api 29.0.2, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-core-customfieldtype-impl 31.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-core-customfieldtype-impl 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
 - com.mgmtp.a12.kernel/kernel-core-runtime-30-8 30.8.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-core-runtime-31-1 31.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-core-runtime-31-1 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-core-runtime-api 32.3.4, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-core-runtime-api 33.0.2, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-internal-base-utils 31.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-internal-base-utils 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-internal-core-calc 31.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-internal-core-calc 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-internal-core-codegen 31.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-internal-core-codegen 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-internal-core-codegen-base 31.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-internal-core-codegen-base 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-internal-core-codegen-condition 31.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-internal-core-codegen-condition 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-internal-core-codegen-entities 31.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-internal-core-codegen-entities 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-internal-core-codegen-meta-base 31.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-internal-core-codegen-meta-base 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-internal-core-codegen-rules 31.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-internal-core-codegen-rules 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-internal-core-extmpspecifics 31.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-internal-core-extmpspecifics 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-internal-core-facade 31.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-internal-core-facade 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-internal-core-ontheflytesting 31.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-internal-core-ontheflytesting 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-internal-core-parser 31.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-internal-core-parser 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-internal-core-parsetree-api 31.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-internal-core-parsetree-api 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-internal-core-service 31.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-internal-core-service 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-internal-core-tool-api 31.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-internal-core-tool-api 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-internal-core-utils 31.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-internal-core-utils 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-internal-mapping-rt-api 31.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-internal-mapping-rt-api 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-internal-md-model 31.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-internal-md-model 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-internal-md-model-migration 31.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-internal-md-model-migration 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-internal-md-runtime-api 31.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-internal-md-runtime-api 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-internal-md-runtime-service 31.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-internal-md-runtime-service 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-internal-md-structuralmapping-codegen 31.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-internal-md-structuralmapping-codegen 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-internal-md-structuralmapping-tool 31.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-internal-md-structuralmapping-tool 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-md-documentmodel 31.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-md-document-v2 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-md-document-v2 30.8.1, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-md-documentmodel 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-md-facade 31.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-md-facade 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-md-serializer 31.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-md-serializer 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
-- com.mgmtp.a12.kernel/kernel-md-workspace-converter 31.1.0, licensed under EUPL v1.2
+- com.mgmtp.a12.kernel/kernel-md-workspace-converter 31.1.1, licensed under EUPL v1.2
 	Copyright (C) 2012-2026 mgm technology partners GmbH
 	Source: https://github.com/mgm-tp
 - com.mgmtp.a12.kernel/mmdmjsons-extmpinternal-ct_field_type_attributes-1-a12 3.1.551343, licensed under EUPL v1.2
@@ -221,12 +217,12 @@ The following third-party components are included in this distribution:
 - jakarta.validation/jakarta.validation-api 3.1.1, licensed under Apache-2.0
 	Copyright (c) 2019,2023 Eclipse Foundation
 	Source: https://github.com/jakartaee/validation
-- org.antlr/antlr4-runtime 4.13.2, licensed under BSD-3-Clause
-	Copyright (c) 2012-2017 The ANTLR Project
-	Source: https://github.com/antlr/antlr4
 - org.antlr/antlr-runtime 3.5.3, licensed under BSD-3-Clause
 	Copyright (c) 2005-2009 Terence Parr
 	Source: https://github.com/antlr/antlr3
+- org.antlr/antlr4-runtime 4.13.2, licensed under BSD-3-Clause
+	Copyright (c) 2012-2017 The ANTLR Project
+	Source: https://github.com/antlr/antlr4
 - org.antlr/ST4 4.3.4, licensed under BSD-3-Clause
 	Copyright (c) 2011-2022 Terence Parr
 	Source: https://github.com/antlr/stringtemplate4
@@ -243,7 +239,7 @@ The following third-party components are included in this distribution:
 	Copyright 2003-2023 The Apache Software Foundation
 	Source: https://github.com/apache/groovy
 - org.jspecify/jspecify 1.0.0, licensed under Apache-2.0
-	 Copyright 2022 The JSpecify Authors
+	Copyright 2022 The JSpecify Authors
 	Source: https://github.com/jspecify/jspecify
 - org.slf4j/slf4j-api 2.0.17, licensed under MIT
 	Copyright (c) 2004-2022 QOS.ch Sarl (Switzerland)
@@ -263,13 +259,18 @@ The following third-party components are included in this distribution:
 - org.springframework/spring-expression 7.0.7, licensed under Apache-2.0
 	Copyright 2002-present the original author or authors
 	Source: https://github.com/spring-projects/spring-framework
-- tools.jackson.core/jackson-core 3.1.2, licensed under Apache-2.0
+- tools.jackson.core/jackson-core 3.2.1, licensed under Apache-2.0
 	Copyright 2007-, Tatu Saloranta (tatu.saloranta@iki.fi)
 	Source: https://github.com/FasterXML/jackson-core
-- tools.jackson.core/jackson-databind 3.1.2, licensed under Apache-2.0
+- tools.jackson.core/jackson-databind 3.2.1, licensed under Apache-2.0
 	Copyright 2007-, Tatu Saloranta (tatu.saloranta@iki.fi)
 	Source: https://github.com/FasterXML/jackson-databind
+- tools.jackson/jackson-bom 3.2.1, licensed under Apache-2.0
+	Source: https://github.com/FasterXML/jackson-bom
 
+
+Embedded NOTICE Files
+---------------------
 
 NOTICE file of commons-cli
 ---------------------------
@@ -280,7 +281,6 @@ Copyright 2002-2026 The Apache Software Foundation
 This product includes software developed at
 The Apache Software Foundation (https://www.apache.org/).
 
-
 NOTICE file of commons-io
 ---------------------------
 
@@ -290,7 +290,6 @@ Copyright 2002-2026 The Apache Software Foundation
 This product includes software developed at
 The Apache Software Foundation (https://www.apache.org/).
 
-
 NOTICE file of commons-logging
 ---------------------------
 
@@ -299,7 +298,6 @@ Copyright 2001-2026 The Apache Software Foundation
 
 This product includes software developed at
 The Apache Software Foundation (https://www.apache.org/).
-
 
 NOTICE file of io.micrometer
 ---------------------------
@@ -350,7 +348,6 @@ package in the Spring Framework library, distributed by VMware, Inc:
   * License: Apache License v2.0
   * Homepage: https://spring.io/projects/spring-framework
 
-
 NOTICE file of jakarta.validation
 ---------------------------
 
@@ -397,8 +394,6 @@ Test dependencies:
  * [JCommander](https://github.com/cbeust/jcommander) - Apache License 2.0
  * [SnakeYAML](https://bitbucket.org/asomov/snakeyaml/src) - Apache License 2.0
 
-
-
 NOTICE file of org.apache.commons
 ---------------------------
 
@@ -407,7 +402,6 @@ Copyright 2001-2019 The Apache Software Foundation
 
 This product includes software developed at
 The Apache Software Foundation (http://www.apache.org/).
-
 
 NOTICE file of org.codehaus.groovy
 ---------------------------
@@ -446,3 +440,4 @@ respective licenses. For details, see the file LICENSE.
 owners.
 
 End of THIRD_PARTY_NOTICES
+

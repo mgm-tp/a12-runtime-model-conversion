@@ -5,9 +5,9 @@ import org.cyclonedx.model.ExternalReference
 plugins {
     id("java")
     id("maven-publish")
-    id("com.gradleup.shadow") version "8.3.10"
+    alias(thirdParty.plugins.shadow)
     alias(a12.plugins.artifact.publish)
-    alias(gradlePluginLibs.plugins.cyclonedx)
+    alias(thirdParty.plugins.cyclonedx)
 }
 
 val a12ReleaseLine: String by project
@@ -18,12 +18,12 @@ a12Publish {
 }
 
 dependencies {
-    implementation(libs.jackson.databind)
+    implementation(thirdParty.jackson.databind)
     implementation(a12.wcf.api)
     implementation(a12.kernel.md.facade)
     implementation(a12.kernel.md.workspace.converter)
-    testImplementation(libs.junit.jupiter)
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+    testImplementation(thirdParty.junit.jupiter)
 }
 
 tasks {
@@ -61,6 +61,9 @@ tasks {
     }
     named<ShadowJar>("shadowJar") {
         archiveClassifier.set("fatjar")
+
+        // EXCLUDE would drop duplicate service files before mergeServiceFiles() can merge them
+        duplicatesStrategy = DuplicatesStrategy.INCLUDE
 
         mergeServiceFiles()
 

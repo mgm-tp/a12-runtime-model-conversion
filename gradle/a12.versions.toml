@@ -1,0 +1,17 @@
+[versions]
+artifact-publish = "0.4.2"
+kernel = "31.1.1"
+wcf = "1.1.3"
+integration = "0.1.9"
+third-party-notices = "0.2.20"
+
+[libraries]
+kernel-md-facade = { group = "com.mgmtp.a12.kernel", name = "kernel-md-facade", version.ref = "kernel" }
+kernel-md-workspace-converter = { group = "com.mgmtp.a12.kernel", name = "kernel-md-workspace-converter", version.ref = "kernel" }
+wcf-api = { group = "com.mgmtp.a12.dataservices.wcf", name = "dataservices-wcf-api", version.ref = "wcf" }
+wcf-cli = { group = "com.mgmtp.a12.dataservices.wcf", name = "dataservices-wcf-cli", version.ref = "wcf" }
+
+[plugins]
+artifact-publish = { id = "com.mgmtp.a12.bd.artifact-publish", version.ref = "artifact-publish" }
+integration = { id = "com.mgmtp.a12.devtools.plugins.integration", version.ref = "integration" }
+third-party-notices = { id = "com.mgmtp.a12.devtools.plugins.third-party-notices", version.ref = "third-party-notices" }
